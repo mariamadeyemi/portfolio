@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+$white-color: #ffffff;
+$second-white: #f5f3f4;
+$black-color: #121420;
+$primary-color: #fbfefb;
+$secondary-color: #1b2432;
+$accent-color: #1dd3b0;
+$drop-color: #086375;
+$normal-font: 400;
+$semi-font: 500;
+$bold: 700;
+
+$transition: 0.3ms;
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

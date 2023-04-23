@@ -1,0 +1,348 @@
+@import "./partials";
+
+body{
+    background-color: $primary-color;
+    color: $black-color;
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    transition: $transition;
+}
+
+// navbar
+h1{
+    color: $accent-color;
+    font-size: 2rem;
+    font-weight: $bold;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem 3.5rem;
+    background: transparent;
+
+    .nav-list{
+        display: flex;
+        gap: 1.9rem;
+    }
+
+    a{
+        color: $accent-color;
+    }
+
+    button{
+        color: $accent-color;
+        font-size: 1.5rem;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+        display: none;
+    }
+}
+
+
+// about section
+
+.about{
+    @include flex; 
+    justify-content: center; 
+    gap: 2em;
+    padding: 3em 1em;
+    flex-wrap: wrap;
+    
+    .hero-intro{
+        max-width: 50%;
+
+        .intro{
+            font-size: 18px;
+            margin-bottom: 1em;
+            font-weight: $normal-font;
+
+            span{
+                font-size: 30px;
+                font-weight: $bold;
+                color: $drop-color;
+            }
+        }
+
+        .details{
+            line-height: 1.5;
+
+            span{
+                font-size: 20px;
+                font-weight: $bold;
+                color: $drop-color;
+            }
+        }
+    }
+
+    .hero-img {
+       max-width: 25rem;
+
+       img{
+        width:100%;
+       }
+    }
+}
+
+
+// skills
+
+h2{
+    font-weight: $bold;
+    margin-bottom: 1em;
+    color: $accent-color;
+}
+.skills{
+    padding: 1em 2em 2em;
+
+
+    .skill-list{
+        @include flex;
+        gap: 2em;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0.2em 4em;
+        li img{
+            width: 2em;
+        }
+
+        .skill{
+            @include flex;
+            gap: 0.5em;
+            flex: 30%;
+            font-weight: $bold;
+        }
+    }
+}
+
+// projects
+
+.projects{
+    width: 100%;
+    padding: 1em 2em;
+
+    .project-container{
+        width: 100%;
+
+        h3{
+            margin-bottom: 1em;
+            font-weight: $semi-font;
+            color: $drop-color;
+        }
+
+        .contribution{
+            margin-bottom: 2em
+        }
+       
+        .card-container{
+            @include flex;
+            align-items: stretch;
+            justify-content: space-between;
+            gap: 1em;
+            flex-wrap: wrap;
+        }
+
+        .card{
+            max-width: 24rem;
+            color: $secondary-color;
+            padding: 1em;
+            border-radius: 6px;
+            background: $second-white;
+            box-shadow:  20px 20px 60px #d3d3d3,
+             -20px -20px 60px #ffffff;
+            cursor: pointer;
+            height: auto;
+
+            .card-icons{
+                @include flex;
+                justify-content: space-between;
+
+                .fa{
+                    font-size: 20px;
+                }
+
+                .hub{
+                    margin-right: 0.5em;
+                }
+            
+            }
+
+            .card-details{
+                margin-top: 1em;
+
+                .project-name{
+                    font-size: 18px;
+                    font-weight: $bold;
+                    margin-bottom: 0.7em;
+                    color: $drop-color;
+                }
+
+                .desc{
+                    margin-bottom: 0.7em;
+                    font-size: 16px;
+                }
+
+                .tools{
+                    font-weight: $bold;
+                    @include flex;
+                    gap: 1em;
+                    color: $drop-color;
+                }
+            }
+        }
+
+        .contribute-card-one{
+            background-image: url("../assets/img/KopaHouses\ _\ Your\ Housing\ Made\ Easy_.png");
+
+           
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+
+}
+
+.posts, .contact{
+    padding: 1em 2em;
+}
+
+.posts{
+    p{
+        font-size: 18px;
+        margin-bottom: 1em;
+    }
+
+    button{
+        padding: 1.3em 3em;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: $black-color;
+        background-color: $accent-color;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+
+        &:hover{
+            background-color: $second-white;
+            box-shadow: 0px 15px 20px $accent-color;
+            color: $black-color;
+            transform: translateY(-7px);
+        }
+          
+        &:active {
+            transform: translateY(-1px);
+          }
+
+        a{
+            color: $black-color;
+            font-family: 'Rubik', sans-serif;
+            font-size: 16px;
+        }
+    }
+}
+
+.contact{
+    text-align: center;
+
+    button{
+        margin-top: 1em;
+        padding: 1.3em 3em;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: $black-color;
+        background-color: $accent-color;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+
+        &:hover{
+            background-color: $second-white;
+            box-shadow: 0px 15px 20px $accent-color;
+            color: $black-color;
+            transform: translateY(-7px);
+        }
+          
+        &:active {
+            transform: translateY(-1px);
+          }
+
+        a{
+            color: $black-color;
+            font-family: 'Rubik', sans-serif;
+            font-size: 16px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 720px){
+    nav{
+        justify-content: space-between;
+        padding: 1em 2em;
+
+        button{
+            display: block;
+        }
+
+        ul{
+            position: fixed;
+            background-color: $black-color;
+            color: $white-color;
+            flex-direction: column;
+            top: 86px;
+            left: 10%;
+            width: 80%;
+            text-align: center;
+            transform: translateX(120%);
+            transition: transform 0.5s ease-in; 
+            
+            li{
+                margin: 8px;
+            }
+        }
+
+        nav ul.show{
+            transform: translateX(0);
+        }
+
+    
+    }
+
+    .about{
+        justify-content: flex-start;
+        padding: 3em 2em;
+
+        .hero-intro{
+            max-width: 100%;
+        }
+    }
+
+}

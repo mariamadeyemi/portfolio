@@ -34,8 +34,9 @@ nav{
     display: flex;
     align-items: center;
     // justify-content: space-around;
-    padding: 1.5rem 2em;
+    padding: 0.8em 2em;
     background: #0c4550;
+    box-shadow: 0 2px 4px 0 $color;
 
     .nav-list{
         display: flex;
@@ -102,7 +103,7 @@ nav{
             span{
                 font-size: 30px;
                 font-weight: $bold;
-                color: $accent-color;
+                color: $orange;
             }
         }
 
@@ -112,7 +113,7 @@ nav{
             span{
                 font-size: 20px;
                 font-weight: $bold;
-                color: $accent-color;
+                color: $black-color;
             }
         }
     }
@@ -301,6 +302,11 @@ h2{
         cursor: pointer;
         font-family: 'Rubik', sans-serif;
     }
+
+    .dev{
+        color: $primary-color;
+        border-bottom: solid 2px $accent-color;
+    }
       
   
     
@@ -347,7 +353,7 @@ h2{
 
 @media screen and (max-width: 720px){
     nav{
-        padding: 1em 2em;
+        padding: 0.5em 2em;
         justify-content: space-between;
 
         button{

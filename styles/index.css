@@ -6,8 +6,8 @@
 }
 
 body {
-  background-color: #fbfefb;
-  color: #121420;
+  background-color: #0c4550;
+  color: #fbfefb;
   line-height: 1.5;
   font-size: 18px;
   font-family: "Rubik", sans-serif;
@@ -38,7 +38,7 @@ nav {
   display: flex;
   align-items: center;
   padding: 1.5rem 2em;
-  background: transparent;
+  background: #0c4550;
 }
 nav .nav-list {
   display: flex;
@@ -96,7 +96,7 @@ nav button {
 .about .hero-intro .intro span {
   font-size: 30px;
   font-weight: 700;
-  color: #086375;
+  color: #1dd3b0;
 }
 .about .hero-intro .details {
   line-height: 1.5;
@@ -104,7 +104,7 @@ nav button {
 .about .hero-intro .details span {
   font-size: 20px;
   font-weight: 700;
-  color: #086375;
+  color: #1dd3b0;
 }
 .about .hero-img {
   max-width: 25rem;
@@ -133,7 +133,6 @@ h2 {
   display: flex;
   align-items: center;
   gap: 0.5em;
-  color: #1b2432;
   font-weight: 700;
 }
 .skills .skill img {
@@ -150,7 +149,6 @@ h2 {
 .projects .project-container h3 {
   margin-bottom: 1em;
   font-weight: 500;
-  color: #1b2432;
 }
 .projects .project-container .contribution {
   margin-bottom: 2em;
@@ -165,11 +163,11 @@ h2 {
 }
 .projects .project-container .card {
   max-width: 24rem;
-  color: #f5f3f4;
+  color: #fbfefb;
   padding: 2em 1em;
   border-radius: 18px;
   background: #086375;
-  box-shadow: inset 10px 10px 20px #086375, inset -10px -10px 20px #1b2432;
+  box-shadow: inset 10px 10px 20px #086375, inset -10px -10px 20px #0c4550;
   cursor: pointer;
   height: auto;
 }

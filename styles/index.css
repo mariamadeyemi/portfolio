@@ -166,9 +166,9 @@ h2 {
   max-width: 24rem;
   color: #fbfefb;
   padding: 2em 1em;
-  border-radius: 18px;
+  border-radius: 8px;
   background: #086375;
-  box-shadow: inset 10px 10px 20px #086375, inset -10px -10px 20px #0c4550;
+  box-shadow: -6px -18px 41px -53px #0c4550;
   cursor: pointer;
   height: auto;
 }
@@ -235,6 +235,7 @@ h2 {
   font-weight: 700;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1em;
   color: #1dd3b0;
 }

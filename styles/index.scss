@@ -199,9 +199,9 @@ h2{
             max-width: 24rem;
             color: $primary-color;
             padding: 2em 1em;
-            border-radius: 18px;
+            border-radius: 8px;
             background: $drop-color;
-            box-shadow: inset 10px 10px 20px $drop-color, inset -10px -10px 20px $color;
+            box-shadow: -6px -18px 41px -53px $color;
             cursor: pointer;
             height: auto;
 
@@ -276,6 +276,7 @@ h2{
                 .tools{
                     font-weight: $bold;
                     @include flex;
+                    flex-wrap: wrap;
                     gap: 1em;
                     color: $accent-color;
                 }

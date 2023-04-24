@@ -130,7 +130,7 @@ h2 {
 .projects .project-container h3 {
   margin-bottom: 1em;
   font-weight: 500;
-  color: #086375;
+  color: #1b2432;
 }
 .projects .project-container .contribution {
   margin-bottom: 2em;
@@ -145,11 +145,11 @@ h2 {
 }
 .projects .project-container .card {
   max-width: 24rem;
-  color: #1b2432;
+  color: #f5f3f4;
   padding: 1em;
-  border-radius: 6px;
-  background: #f5f3f4;
-  box-shadow: 20px 20px 60px #d3d3d3, -20px -20px 60px #ffffff;
+  border-radius: 18px;
+  background: #086375;
+  box-shadow: inset 10px 10px 20px #086375, inset -10px -10px 20px #1b2432;
   cursor: pointer;
   height: auto;
 }
@@ -164,6 +164,42 @@ h2 {
 .projects .project-container .card .card-icons .hub {
   margin-right: 0.5em;
 }
+.projects .project-container .card .card-icons .card-one-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5px;
+  background-image: url("../assets/img/KopaHouses _ Your Housing Made Easy_.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.projects .project-container .card .card-icons .card-two-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5px;
+  background-image: url("../assets/img/Beat-Store_.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.projects .project-container .card .card-icons .card-three-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5px;
+  background-image: url("../assets/img/URL shortener.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.projects .project-container .card .card-icons .card-four-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5px;
+  background-image: url("../assets/img/Frontend Mentor _ Manage landing page_.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .projects .project-container .card .card-details {
   margin-top: 1em;
 }
@@ -171,7 +207,6 @@ h2 {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 0.7em;
-  color: #086375;
 }
 .projects .project-container .card .card-details .desc {
   margin-bottom: 0.7em;
@@ -184,12 +219,6 @@ h2 {
   gap: 1em;
   color: #086375;
 }
-.projects .project-container .contribute-card-one {
-  background-image: url("../assets/img/KopaHouses _ Your Housing Made Easy_.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .posts, .contact {
   padding: 1em 2em;
@@ -199,34 +228,9 @@ h2 {
   font-size: 18px;
   margin-bottom: 1em;
 }
-.posts button {
-  padding: 1.3em 3em;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #121420;
-  background-color: #1dd3b0;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-}
-.posts button:hover {
-  background-color: #f5f3f4;
-  box-shadow: 0px 15px 20px #1dd3b0;
-  color: #121420;
-  transform: translateY(-7px);
-}
-.posts button:active {
-  transform: translateY(-1px);
-}
-.posts button a {
-  color: #121420;
+.posts a {
+  color: #086375;
   font-family: "Rubik", sans-serif;
-  font-size: 16px;
 }
 
 .contact {

@@ -1,5 +1,10 @@
 @import "./partials";
 
+html{
+    scroll-behavior: smooth;
+}
+
+
 body{
     background-color: #0c4550;
     color: $primary-color;
@@ -43,6 +48,7 @@ nav{
         gap: 1.9rem;
         align-items: flex-start;
         flex: 50%;
+        text-transform: capitalize;
     }
 
     a{
@@ -347,6 +353,30 @@ h2{
             color: $black-color;
             font-family: 'Rubik', sans-serif;
             font-size: 16px;
+        }
+    }
+
+    .socio-icons{
+        margin-top: 2em;
+        
+        ul{
+            @include flex;
+            justify-content: center;
+            gap: 1em;
+
+            li{
+                font-size: 1.5em;
+                cursor: pointer;
+                transition: $transition;
+            }
+
+            li a{
+                color: $primary-color;
+
+                &:hover{
+                    color: $orange;
+                }
+            }
         }
     }
 }

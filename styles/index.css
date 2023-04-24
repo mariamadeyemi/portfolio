@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #0c4550;
   color: #fbfefb;
@@ -46,6 +50,7 @@ nav .nav-list {
   gap: 1.9rem;
   align-items: flex-start;
   flex: 50%;
+  text-transform: capitalize;
 }
 nav a {
   color: #1dd3b0;
@@ -290,6 +295,26 @@ h2 {
   color: #121420;
   font-family: "Rubik", sans-serif;
   font-size: 16px;
+}
+.contact .socio-icons {
+  margin-top: 2em;
+}
+.contact .socio-icons ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.contact .socio-icons ul li {
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: 0.3ms;
+}
+.contact .socio-icons ul li a {
+  color: #fbfefb;
+}
+.contact .socio-icons ul li a:hover {
+  color: #ffe900;
 }
 
 @media screen and (max-width: 720px) {

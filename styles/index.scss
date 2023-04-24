@@ -23,6 +23,7 @@ h1{
     color: $accent-color;
     font-size: 2rem;
     font-weight: $bold;
+    flex: 40%;
 }
 
 nav{
@@ -32,17 +33,40 @@ nav{
     z-index: 1;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 1.5rem 3.5rem;
+    // justify-content: space-around;
+    padding: 1.5rem 2em;
     background: transparent;
 
     .nav-list{
         display: flex;
         gap: 1.9rem;
+        align-items: flex-start;
+        flex: 50%;
     }
 
     a{
         color: $accent-color;
+        position: relative;
+        padding-bottom: 4px;
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            border-radius: 4px;
+            background-color: #ffe900;
+            bottom: 0;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .3s ease-in-out;
+        }
+
+        &:hover::before{
+            transform-origin: left;
+            transform: scaleX(1);
+        }
     }
 
     button{
@@ -54,6 +78,8 @@ nav{
         display: none;
     }
 }
+
+
 
 
 // about section
@@ -171,7 +197,7 @@ h2{
         .card{
             max-width: 24rem;
             color: $second-white;
-            padding: 1em;
+            padding: 2em 1em;
             border-radius: 18px;
             background: $drop-color;
             box-shadow: inset 10px 10px 20px $drop-color, inset -10px -10px 20px $secondary-color;
@@ -250,7 +276,7 @@ h2{
                     font-weight: $bold;
                     @include flex;
                     gap: 1em;
-                    color: $drop-color;
+                    color: $accent-color;
                 }
             }
         }
@@ -270,8 +296,9 @@ h2{
         margin-bottom: 1em;
     }
 
-    a{
-        color: $drop-color;
+    a.check{
+        color: #ffe900;
+        cursor: pointer;
         font-family: 'Rubik', sans-serif;
     }
       
@@ -320,8 +347,8 @@ h2{
 
 @media screen and (max-width: 720px){
     nav{
-        justify-content: space-between;
         padding: 1em 2em;
+        justify-content: space-between;
 
         button{
             display: block;

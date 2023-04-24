@@ -188,6 +188,12 @@ h2 {
 .projects .project-container .card .card-icons .hub {
   margin-right: 0.5em;
 }
+.projects .project-container .card .card-icons .two-icons a {
+  color: #fbfefb;
+}
+.projects .project-container .card .card-icons .two-icons a:hover {
+  color: #1dd3b0;
+}
 .projects .project-container .card .card-icons .card-one-img {
   width: 3rem;
   height: 3rem;

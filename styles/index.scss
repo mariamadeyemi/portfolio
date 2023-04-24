@@ -223,6 +223,14 @@ h2{
                     margin-right: 0.5em;
                 }
 
+                .two-icons a{
+                    color: $primary-color;
+
+                    &:hover{
+                        color: $accent-color;
+                    }
+                }
+
                 .card-one-img{
                     width: 3rem;
                     height: 3rem;

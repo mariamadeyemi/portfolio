@@ -60,9 +60,9 @@ nav{
 
 .about{
     @include flex; 
-    justify-content: center; 
+    justify-content: flex-start; 
     gap: 2em;
-    padding: 3em 1em;
+    padding: 3em 2em;
     flex-wrap: wrap;
     
     .hero-intro{
@@ -111,24 +111,34 @@ h2{
 .skills{
     padding: 1em 2em 2em;
 
-
     .skill-list{
-        @include flex;
-        gap: 2em;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 0.2em 4em;
-        li img{
-            width: 2em;
-        }
-
-        .skill{
-            @include flex;
-            gap: 0.5em;
-            flex: 30%;
-            font-weight: $bold;
-        }
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        column-gap: 2em;
+        row-gap: 1.5em
     }
+
+    .skill{
+        @include flex;
+        gap: 0.5em;
+        // flex: 30%;
+        color: $secondary-color;
+        font-weight: $bold;
+
+        img{
+           width: 2em;
+      }
+    }
+
+
+    // .skill-list{
+    //     @include flex;
+    //     gap: 2em;
+    //     justify-content: center;
+    //     flex-wrap: wrap;
+    //     padding: 0.2em 4em;
+    //     
+    // }
 }
 
 // projects
